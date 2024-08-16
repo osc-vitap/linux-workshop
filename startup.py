@@ -26,8 +26,8 @@ def exitProtection():
 		exitProtection()
 	
 	except EOFError:
-		print("\nDamn, but not today.")
-		exitProtection()
+		print("\nDamn, ok I guess")
+		quit()
 
 if __name__ == "__main__":
 	exitProtection()
