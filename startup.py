@@ -12,7 +12,7 @@ def main():
 			for row in reader:
 					if row[0] == reg_no and row[0][-4:] == password: 
 							print("Welcome!")
-							os.system("docker run -it linux-event-test:latest /bin/bash")
+							os.system("docker run -it ghcr.io/osc-vitap/linux-event-vm:0.1.0 /bin/bash")
 							break
 			else:
 					print("Invalid credentials!") 
