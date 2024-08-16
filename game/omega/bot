@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Dont scroll down more
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# NOO!! dont spoil the game
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# T_T
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("Thank you for reviving me. I want to relay something very important to you.")
+input("Press Enter to continue...")
+print("I was on my way to earth to warn you about the impending doom, but I was taken down by an unknown force.")
+input("Press Enter to continue...")
+print("The force that took me down is now on its way to earth. We must ask for reinforcements.")
+input("Press Enter to continue...")
+print("This is the location of the reinforcements. \"http://andromeda/reinforcements\". Quickly send a message to them using curl!")
+input("Press Enter to continue...")
+print("I am counting on you to save earth. Good luck!")
