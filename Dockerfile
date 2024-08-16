@@ -5,16 +5,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     adduser \
     tini \
     vim \
+    nano \
     && rm -rf /var/lib/apt/lists/*
 
 RUN adduser --disabled-password --gecos "" appuser
 RUN echo "root:admin123" | chpasswd
 
+COPY ./game /home/appuser/
+
+RUN chown -R appuser:appuser /home/appuser
+RUN chown root:root /home/appuser/omega/bot
+
 USER appuser
 
 WORKDIR /home/appuser
-
-COPY ./game /home/appuser/
 
 CMD ["/bin/bash"]
 
