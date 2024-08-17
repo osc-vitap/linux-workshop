@@ -12,10 +12,14 @@ def main():
 			for row in reader:
 					if row[0] == reg_no and row[0][-4:] == password: 
 							print("Welcome!")
+							print("You will now be transferred to your own Linux Virtual Machine")
+							input("Press Enter to continue...")
 							os.system("docker run -it ghcr.io/osc-vitap/linux-event-vm:latest /bin/bash")
 							break
 			else:
 					print("Invalid credentials!") 
+			
+			main()
 
 def exitProtection():
 	try:
@@ -26,8 +30,9 @@ def exitProtection():
 		exitProtection()
 	
 	except EOFError:
-		print("\nDamn, ok I guess")
-		quit()
+			print("\nIf you are facing any issues, please close the cmd/terminal and connect to server again.")
+			print("Or call the event coordinators for help.")
+			exitProtection()
 
 if __name__ == "__main__":
 	exitProtection()
