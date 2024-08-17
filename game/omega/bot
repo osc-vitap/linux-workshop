@@ -113,6 +113,6 @@ print("I was on my way to earth to warn you about the impending doom, but I was 
 input("Press Enter to continue...")
 print("The force that took me down is now on its way to earth. We must ask for reinforcements.")
 input("Press Enter to continue...")
-print("This is the location of the reinforcements. \"http://andromeda/reinforcements\". Quickly send a message to them using curl!")
+print("This is the location of the reinforcements. \"http://23.150.24.236/reinforcements/<reg_no>\". Quickly send a message to them using curl!")
 input("Press Enter to continue...")
 print("I am counting on you to save earth. Good luck!")
